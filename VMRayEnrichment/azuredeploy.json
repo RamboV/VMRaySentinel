@@ -13,7 +13,7 @@
             "minLength": 1
         },
         "FunctionAppName": {
-            "defaultValue": "vmrayPlatform",
+            "defaultValue": "vmrayenrich",
             "type": "string"
         },
         "AppInsightsWorkspaceResourceID": {
