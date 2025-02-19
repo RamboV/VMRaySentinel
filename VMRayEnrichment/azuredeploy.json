@@ -12,6 +12,13 @@
             "defaultValue": "<VMRay API Key>",
             "minLength": 1
         },
+        "Resubmit": {
+            "type": "bool",
+            "defaultValue": true,
+             "metadata": {
+		"description": "If true, the sample will be resubmitted to VMRay analyser, even if the sample hash was found in VMRay."
+	      }
+        },
         "FunctionAppName": {
             "defaultValue": "vmrayenrich",
             "type": "string"
@@ -149,6 +156,7 @@
                         "AzureWebJobsStorage": "[concat('DefaultEndpointsProtocol=https;AccountName=', toLower(variables('FunctionName')),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', toLower(variables('FunctionName'))), '2023-04-01').keys[0].value, ';EndpointSuffix=',toLower(variables('StorageSuffix')))]",
                         "vmrayBaseURL": "[parameters('vmrayBaseURL')]",
                         "vmrayAPIKey": "[parameters('vmrayAPIKey')]",
+                        "Resubmit": "[parameters('Resubmit')]",
                         "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/shubhamloginsoft/VMRay-Platform/raw/refs/heads/main/VMRayEnrichemntFuncApp.zip?raw=true"
                     }
                 }
