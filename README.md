@@ -61,4 +61,4 @@
 
 Click on below button to deploy VMRay Sentinel Feed app:
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/RamboV/VMRaySentinel/refs/heads/main/VMRayThreatIntelligence/azure_deploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FVMRayThreatIntelligence%2Fazure_deploy.json)
