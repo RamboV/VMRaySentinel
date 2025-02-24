@@ -382,7 +382,7 @@
                                                                     "incident_id": "@body('Create_incident')?['properties']?['incidentNumber']"
                                                                 },
                                                                 "function": {
-																	 "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/InvestigateDomain')]"
+																	 "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRayIOCs')]"
                                                                 }
                                                             }
                                                         },
