@@ -1,4 +1,4 @@
-# Microsoft Sentinel for VMRay Feed and VMRay Enrichment
+# VMRay Feed and VMRay Enrichment For Microsoft Sentinel
 
 **Latest Version:** beta - **Release Date:** 
 
