@@ -55,6 +55,11 @@
 ![08](Images/08.png)
 
 - Use Secret `Value` to configure connector.
+  # Deploy VMRay Sentinel Feed App
+
+Click on below button to deploy VMRay Sentinel Feed app:
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://github.com/RamboV/VMRaySentinel/blob/main/VMRayThreatIntelligence/azure_deploy.json)
 
 ![09](Images/09.png)
 
