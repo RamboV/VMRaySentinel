@@ -108,6 +108,7 @@
 - It will redirect to feed Configuration page.
   ![13](Images/13.png)
 - Please provide the values accordingly
+  
 |       Fields       |   Description |
 |:---------------------|:--------------------
 | Subscription		| Select the appropriate Azure Subscription    | 
@@ -133,6 +134,7 @@
 
 ### Deploy `VMRay-Sandbox_Outlook_Attachment` 
 - Click on below button
+  
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FLogicApps%2Fazuredeploy2.json)
 
 - It will redirect to configuration page
