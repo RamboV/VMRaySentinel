@@ -36,7 +36,7 @@
     "variables": {
 		"functionappName": "[concat(toLower(parameters('FunctionAppName')), take(uniqueString(resourceGroup().id), 3))]",
 		"AzureSentinelConnectionName": "[concat('azuresentinel-', parameters('PlaybookName'))]",
-		"Office365V1": "[concat('office365-', parameters('PlaybookName'))]",
+		"Office365V1": "[concat('office365-', parameters('PlaybookName'))]"
 	},
     "resources": [
 		{
