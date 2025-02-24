@@ -106,4 +106,34 @@
   [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FVMRayEnrichment%2Fazuredeploy.json)
   
 - It will redirect to feed Configuration page.
+  ![13](Images/13.png)
+- Please provide the values accordingly
+|       Fields       |   Description |
+|:---------------------|:--------------------
+| Subscription		| Select the appropriate Azure Subscription    | 
+| Resource Group 	| Select the appropriate Resource Group |
+| Region			| Based on Resource Group this will be uto populated |
+| Function Name		| Please provide a function name if needed to change the default value|
+| Vmray Base URL | VMRay Base URL |
+| Vmray API Key | VMRay API Key |
+| Resubmit   | If true file will be resubmitted to VMRay |
+| App Insights Workspace Resource ID | Go to `Log Analytics workspace` -> `Settings` -> `Properties`, Copy `Resource ID` and paste here |
+
+- Once you provide the above values, please click on `Review + create` button.
+
+
+## Deploy VMRay Logic Apps
+### Deploy `Submit-URL-VMRay-Analyzer`
+- Click on below button
   
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FLogicApps%2Fazuredeploy1.json)
+
+- It will redirect to configuration page
+- please click on `Review + create` button
+
+### Deploy `VMRay-Sandbox_Outlook_Attachment` 
+- Click on below button
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FLogicApps%2Fazuredeploy2.json)
+
+- It will redirect to configuration page
+- please click on `Review + create` button
