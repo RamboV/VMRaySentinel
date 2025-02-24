@@ -55,13 +55,10 @@
 ![08](Images/08.png)
 
 - Use Secret `Value` to configure connector.
-  # Deploy VMRay Sentinel Feed App
+ 
 
 # Deploy VMRay Sentinel Feed App
 
 Click on below button to deploy VMRay Sentinel Feed app:
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2FRamboV%2FVMRaySentinel%2Fblob%2Fmain%2FVMRayThreatIntelligence%2Fazure_deploy.json)
-
-**Reference**
-- [https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/api-hello-world](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/api-hello-world)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/RamboV/VMRaySentinel/refs/heads/main/VMRayThreatIntelligence/azure_deploy.json)
