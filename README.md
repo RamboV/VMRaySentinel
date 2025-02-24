@@ -58,6 +58,31 @@
   
  ![11](Images/11.png)
 
+## Provide Permission To App Created Above
+
+- Open [https://portal.azure.com/](https://portal.azure.com) and search `Microsoft Sentinel` service.
+- Goto `Settings` -> `Workspace Setting`
+
+![04](Images/04.png)
+
+- Goto `Access Control(IAM)` -> `Add`
+
+![05](Images/05.png)
+
+- Search for `Microsoft Sentinel Contributor` and click `Next`
+
+![06](Images/06.png)
+
+- Select `User,group or service principle`.
+- Search for the app created above and click on `select`.
+- Click on `Next`
+
+![07](Images/07.png)
+
+- Click on `Review + assign`
+
+![08](Images/08.png)
+
 # Deploy VMRay Sentinel Feed App
 
 - Click on below button to deploy VMRay Sentinel Feed app:
@@ -134,7 +159,6 @@
 
 ### Deploy `VMRay-Sandbox_Outlook_Attachment` 
 - Click on below button
-  
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FLogicApps%2Fazuredeploy2.json)
 
 - It will redirect to configuration page
