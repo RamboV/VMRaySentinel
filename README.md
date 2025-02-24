@@ -44,7 +44,7 @@
 
 - In the application overview you can see `Application Name`, `Application ID` and `Tenant ID`.
 
-![07](Images/07.png)
+![07](Images/04.png)
 
 - We need secrets to access programmatically. For creating secrets
   - Click `Manage->Certificates & secrets` tab
