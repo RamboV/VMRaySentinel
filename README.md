@@ -100,3 +100,10 @@
 
 ![15](Images/15.png)
 
+## Deploy VMRay Enrichment App
+- Click on below button to deploy VMRay Sentinel Feed app:
+
+  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FVMRayEnrichment%2Fazuredeploy.json)
+  
+- It will redirect to feed Configuration page.
+  
