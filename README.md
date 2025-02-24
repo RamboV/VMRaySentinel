@@ -36,15 +36,15 @@
 
 - Click `Add->App registration`.
 
-![02](Images/02.png)
+![02a](Images/02a.png)
 
 - Enter the name of application and select supported account types and click on `Register`.
 
-![03](Images/03.png)
+![02](Images/02.png)
 
 - In the application overview you can see `Application Name`, `Application ID` and `Tenant ID`.
 
-![07](Images/04.png)
+![03](Images/03.png)
 
 - We need secrets to access programmatically. For creating secrets
   - Click `Manage->Certificates & secrets` tab
@@ -52,13 +52,51 @@
   - Click `New client secret` button
   - Enter description and set expiration date for secret
 
-![08](Images/08.png)
+![10](Images/10.png)
 
 - Use Secret `Value` to configure connector.
- 
+  
+ ![11](Images/11.png)
 
 # Deploy VMRay Sentinel Feed App
 
-Click on below button to deploy VMRay Sentinel Feed app:
+- Click on below button to deploy VMRay Sentinel Feed app:
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FVMRayThreatIntelligence%2Fazure_deploy.json)
+  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRamboV%2FVMRaySentinel%2Frefs%2Fheads%2Fmain%2FVMRayThreatIntelligence%2Fazure_deploy.json)
+
+- It will redirect to feed Configuration page.
+  ![09](Images/09.png)
+- Please provide the values accordingly.
+  
+|       Fields       |   Description |
+|:---------------------|:--------------------
+| Subscription		| Select the appropriate Azure Subscription    | 
+| Resource Group 	| Select the appropriate Resource Group |
+| Region			| Based on Resource Group this will be uto populated |
+| Function Name		| Please provide a function name if needed to change the default value|
+| Vmray Base URL | VMRay Base URL |
+| Vmray API Key | VMRay API Key |
+| Azure Client ID   | Enter the Azure Client ID created in the App Registration Step |
+| Azure Client Secret | Enter the Azure Client Secret created in the App Registration Step |
+|Azure Tenant ID | Enter the Azure Tenant ID of the App Registration |
+| Azure Workspacse ID   | Enter the Azure Workspacse ID |
+| App Insights Workspace Resource ID | Go to `Log Analytics workspace` -> `Settings` -> `Properties`, Copy `Resource ID` and paste here |
+
+- Once you provide the above values, please click on `Review + create` button.
+
+### Deployment of Function App Zip package
+- Download the zip package from the `VMRayThreatIntelligence` folder.
+- Open [https://portal.azure.com/](https://portal.azure.com) and search `Storage accounts` service.
+
+![14](Images/14.png)
+
+- Open the storage account, the name starts with `vmraystorage`.
+- Go to `Storage Browser` -> `Blob Containers`, click on container, the name starts with `vmraycontainer`.
+- Click on `Switch to Access key`.
+
+![15a](Images/15a.png)
+
+- Upload the downloaded zip package to the container. 
+
+![15](Images/15.png)
+
